@@ -3,6 +3,7 @@
 import About from "./Components/About";
 import Banner from "./Components/Banner";
 import Header from "./Components/Header";
+import Prices from "./Components/Prices";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <main>
       <Banner />
       <About />
+      <Prices />
       </main>
       </div>
 

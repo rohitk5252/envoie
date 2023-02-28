@@ -82,6 +82,11 @@ body {
   align-items: center;
 }
 
+.flexcenter-col {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
 .row::after, 
 .clearFix::after {
@@ -218,6 +223,7 @@ img {
 
 
 header {
+  z-index: 9999;
   display: flex;
   position: fixed;
   width: 100%;
@@ -280,4 +286,104 @@ line-height: 34px;
 
 .banner .center {
   gap: 152px;
+}
+
+/* prices */
+
+.prices .flexrow {
+  gap: 16px;
+}
+.prices .heading_part h2 {
+  color: var(--color-primary-blue);
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 34px;
+}
+
+.prices .heading_part button {
+  margin-bottom: 52px;
+}
+
+.rates {
+  position: relative;
+  margin: 0 -15px;
+  background: var(--color-blueLight-bg);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 34px;
+  margin-bottom: 18px;
+}
+.pricecard.active {
+  border-color: var(--color-primary-orange);
+}
+.rates > img {
+  position: absolute;
+  width: 40%;
+  top: 0;
+  right: 0;
+}
+.rates.active::after {
+  color: #fff;
+  position: absolute;
+  content: "RECOMMENDED";
+  font-weight: 500;
+  font-size: 9px;
+  top: 4px;
+  right: 7px;
+}
+.prices .rates h4{
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+}
+.prices .rates h3{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+}
+.prices .rates h3 sup, .prices .rates h3 sub{
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.prices .rates p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+.prices .rates button {
+  margin-top: 11px;
+}
+
+.prices i {
+  font-size: 14px;
+}
+.prices i.fa-check {
+  margin-right: 16px;
+  color: #5ACE31;
+}
+.prices i.fa-xmark {
+  margin-right: 16px;
+  color: #FF6969;
+}
+
+
+.prices .service p {
+  font-size: 15px;
+  margin-top: 8px;
+}
+.price .service p.active_line::after {
+  content: "";
+  width: 90%;
+  height: 1px;
+}
+.price .service p.active_line::before {
+  
+}
+.pricecard {
+  border: 1px solid#E1E1E1;
+  border-radius: 20px;
+  padding-bottom: 18px;
 }
