@@ -5,15 +5,15 @@ const About = () => {
   return (
     <section id="about" className='about'>
         <div className="container">
-            <div className="row flexrow">
-                <div className="col-12">
+            <div className="row">
+                <div className="col-12 content">
                     <img src={emailsvg} alt="" />
                     <div className="text_content">
                         <h2>Whats an <span>AMP</span> email?</h2>
                         <p>AMP email is a technology that allows you to incorporate interactive elements like checkout buttons, quizzes, webinar forms, calendars etc into your emails without needing to open a new tab to visit a website.</p>
                     </div>
                 </div>
-                <div className="col-12">
+                <div className="col-12 content">
                     <div className="text_content">
                         <h2>Why Does It <span>Matter?</span></h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing <span>  elit. Dolores, eligendi?</span></p>
